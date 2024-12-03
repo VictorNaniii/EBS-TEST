@@ -1,0 +1,62 @@
+.ContentComponets {
+  display: flex;
+  flex-direction: row;
+}
+
+.Filter {
+  width: 20%;
+}
+.Content {
+  width: 80%;
+}
+
+@media (max-width: 768px) {
+  .ContentComponets {
+    flex-direction: column;
+  }
+
+  .Filter {
+    width: 100%;
+  }
+
+  .Content {
+    width: 100%;
+  }
+}
+
+.Products {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+.ProductCard {
+  width: calc(33.33% - 20px);
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.ProductCard:hover {
+  border: 1px solid #0026ff;
+}
+.ProductImage {
+  height: 60%;
+  padding: 10px;
+  object-fit: cover;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+}
+.ProductInfo {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 10px;
+  text-align: center;
+  height: 40%;
+}
+.ProductInfo h4 {
+  font-size: 16px;
+  margin: 0;
+  color: #333;
+}

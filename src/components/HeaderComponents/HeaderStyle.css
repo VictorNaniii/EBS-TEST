@@ -1,0 +1,17 @@
+.HeaderComponents {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #f5f5f5;
+  border-bottom: 1px solid #ccc;
+}
+
+.ShoppingCart {
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.ShoppingCart:hover {
+  color: #007bff;
+}
