@@ -65,6 +65,7 @@ function Content() {
         {categories.map((category, index) => (
           <div key={index}>
             <input
+              className="fitreStyle"
               type="radio"
               id={`category-${index}`}
               name="category"
