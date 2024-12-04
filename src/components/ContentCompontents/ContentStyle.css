@@ -20,6 +20,15 @@
   .Content {
     width: 100%;
   }
+  .Products {
+    flex-direction: column;
+  }
+  .Content {
+    width: 100%;
+  }
+  .ProductCard {
+    width: 100% !important;
+  }
 }
 
 .Products {
