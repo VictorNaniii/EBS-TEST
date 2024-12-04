@@ -1,0 +1,25 @@
+.buttonHandleClick {
+  background-color: #0026ff;
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.buttonHandleClick:active {
+  background-color: #00179a;
+}
+.buttonRemoveFromCart {
+  background-color: #7502543a;
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+}
+.buttonRemoveFromCart:active {
+  background-color: #c500003a;
+}
+.button-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 10px;
+}

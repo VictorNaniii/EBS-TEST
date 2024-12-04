@@ -1,12 +1,21 @@
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
+
+import Header from './components/HeaderComponents/Header'
+import { CartProvider } from './components/CartComponets/CartContext'
+import Content from './components/ContentCompontents/Content'
+import CartPage from './components/CartComponets/CartPage'
+
 function App() {
   return (
-    <div style={{ textAlign: 'center' }}>
-      <h1>Welcome to the Front-End Developer Test!</h1>
-      <p>
-        We wish you the best of luck. Please make sure to read the README file
-        for instructions.
-      </p>
-    </div>
+    <CartProvider>
+      <Router>
+        <Header />
+        <Routes>
+          <Route path="/" element={<Content />} />
+          <Route path="/cart" element={<CartPage />} />
+        </Routes>
+      </Router>
+    </CartProvider>
   )
 }
 

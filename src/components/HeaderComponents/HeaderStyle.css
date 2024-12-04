@@ -13,5 +13,14 @@
 }
 
 .ShoppingCart:hover {
-  color: #007bff;
+  color: #00179a;
+}
+
+.cart-item-count {
+  position: absolute;
+  background-color: #00179a;
+  color: white;
+  border-radius: 50%;
+  font-size: 1rem;
+  font-weight: bold;
 }
